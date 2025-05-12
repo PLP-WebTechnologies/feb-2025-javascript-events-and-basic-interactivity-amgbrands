@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Playground 🎯</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🎉 JavaScript Event Playground</h1>
+
+  <!-- Event Handling Section -->
+  <section>
+    <h2>🎈 Event Handling</h2>
+    <button id="clickBtn">Click Me</button>
+    <div id="hoverBox" style="width:150px;height:100px;border:1px solid #ccc;margin-top:10px;">Hover Over Me</div>
+    <input type="text" id="keyInput" placeholder="Type something..." />
+    <button id="secretBtn">Double-Click Me</button>
+  </section>
+
+  <hr/>
+
+  <!-- Interactive Elements -->
+  <section>
+    <h2>🎮 Interactive Elements</h2>
+
+    <button id="colorChanger">Change My Color</button>
+
+    <div id="gallery">
+      <img id="galleryImage" src="https://via.placeholder.com/200x100?text=Image+1" alt="Gallery Image" />
+      <br />
+      <button id="prevImg">Prev</button>
+      <button id="nextImg">Next</button>
+    </div>
+
+    <div class="tabs">
+      <button class="tab" data-target="content1">Tab 1</button>
+      <button class="tab" data-target="content2">Tab 2</button>
+    </div>
+    <div class="tab-content" id="content1">This is content for Tab 1</div>
+    <div class="tab-content" id="content2" style="display:none;">This is content for Tab 2</div>
+  </section>
+
+  <hr/>
+
+  <!-- Form Validation -->
+  <section>
+    <h2>📋 Form Validation</h2>
+    <form id="myForm">
+      <label>
+        Name (required): <input type="text" id="name" required />
+      </label><br/>
+
+      <label>
+        Email: <input type="email" id="email" required />
+      </label><br/>
+
+      <label>
+        Password (min 8 characters): <input type="password" id="password" required />
+      </label><br/>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formFeedback"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
